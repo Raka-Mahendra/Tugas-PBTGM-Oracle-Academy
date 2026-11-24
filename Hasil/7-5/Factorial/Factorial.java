@@ -1,0 +1,28 @@
+public class Factorial {
+    public int num = 10;
+
+    int getFactorial() {
+        int factorial = 1;
+        for (int i = 1; i <= num; i++) {
+            factorial *= i;
+        }
+        return factorial;
+    }
+
+    public String toString() {
+        StringBuilder hasil = new StringBuilder("Factorial: " + num + "! = ");
+        for (int i = 1; i <= num; i++) {
+            hasil.append(i);
+            if (i < num) {
+                hasil.append(" * ");
+            }
+        }
+        hasil.append(" = ").append(getFactorial());
+        return hasil.toString();
+    }
+
+    public static void main(String[] args) {
+        Factorial f = new Factorial();
+        System.out.println(f);
+    }
+}
