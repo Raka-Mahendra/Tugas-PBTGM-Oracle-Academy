@@ -1,0 +1,6 @@
+public class SyntaxError {
+    public static void main(String[] args) {
+        int angka = 5
+        System.out.println("Nilai: " + angka);
+    }
+}
